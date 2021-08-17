@@ -9,41 +9,137 @@
     <link rel="stylesheet" href="css/.css">
   </head>
   <body>
-	  
-	  <!-- mobile nav bar -->
-<div class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-center-logo" data-hide-for="medium">
-  <div class="title-bar-left">
-    <div class="title-bar-title"><img src="https://placehold.it/100x39" alt="" /></div>
-  </div>
-  <div class="title-bar-right">
-    <button class="menu-icon" type="button" data-toggle="topbar-center-logo"></button>
-  </div>
-</div>
-<!-- /mobile nav bar -->
+<!--CANVAS MENU-->	  
+   <!--Menu-off canvas-->
+      <div class="off-canvas-wrapper">
+          <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-position="left"> <!--if this option does not work can be replaced with <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>-->
+      <button class="close-button" aria-label="Close menu" type="button" data-close style="padding-top:15px;margin-top:-15px;">
+        <span aria-hidden="true">&times;</span>
+      </button><br><hr >
+      <ul class="vertical menu">
+        <!--MOBILE for small devices start here-->
+        <li>
+          <a href="index.html" style="color: #f3f3f3;">HOME</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="index.html" style="color: #f3f3f3;">SCHEDULE</a></li>  
+          </ul>
+        </li>
+        
+        <li>
+          <ul class="submenu menu vertical" data-submenu>
+            <li class="title" style="color: #f3f3f3;">GAMES TRACKER</li>
+            <li><a href="index.html">Fortnite</a></li>
+            <li><a href="index.html">Rocket League</a></li>
+            <li><a href="index.html">CoD MW</a></li>  
+            <li><a href="index.html" style="color: #f3f3f3;">MFULON</a></li>  
+            <li class="divider"></li>
+            <li class="title" style="color: #f3f3f3;">MUSIC</li>
+            <li><a href="index.html">Playlist One</a></li>
+          </ul>
+        </li>
+    
+        <li><a href="index.html">Playlist Two</a></li>
+        
+        <li>
+          <a href="index.html" style="color: #f3f3f3;">MERCH</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="index.php" target="_blank" style="color: #f3f3f3;">CONTACT</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="index.html" class="button">SUBSCRIBE</a></li>
+    
+      </ul>
+    </div>
+    
+    <!--<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <ul class="vertical menu">
+        <li><a href="#">mobile Sites</a></li>
+      </ul>
+    </div>-->
+    
 
-<!-- medium and larger nav bar -->
-<div class="top-bar topbar-center-logo" id="topbar-center-logo">
-  <div class="top-bar-left">
-    <ul class="menu vertical medium-horizontal">
-      <li><a href="#">One</a></li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
+    <div class="off-canvas-content" data-off-canvas-content>
+      
+  <div class="topbar show-for-medium">
+  <div class="title-bar" style="box-shadow:0 1px 0 0 rgba(255, 92, 28, .05), 0 1px 0px 0 rgba(255,215,0, .05);">
+    <div class="title-bar-left">
+    <ul class="menu">
+      <li class="topbar-title"><a href="index.html"><img src="assets/img/topbar-menu/ten-10.png" title="mfulon" alt="logo" style="width:40%;height:auto;margin-top:-27px;margin-bottom:-30px;"></a></li>
     </ul>
-  </div>
-  <div class="top-bar-center">
-    <a href="#"><img src="https://placehold.it/100x39" alt="" /></a>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu vertical medium-horizontal">
-      <li><a href="#">Four</a></li>
-      <li><a href="#">Five</a></li>
-      <li><a href="#">Six</a></li>
+      </div>
+        <div class="top-bar">
+    <ul class="dropdown menu" data-dropdown-menu>
+  <!--MENU for LARGE SCREENS STARTS HERE-->
+      <li data-magellan data-threshold="0">
+        <a href="#homeindex">HOME</a><!--href can be erased to deactivate link-->
+      </li>
+  <li data-magellan data-threshold="0">
+          <a href="#schedule">SCHEDULE</a><!--href can be erased to deactivate link href="index.html"-->
+          </li>
+      <li data-magellan>
+        <a href="#games">GAMES</a><!--href can be erased to deactivate link-->
+        <!--<ul class="submenu menu vertical" data-submenu>
+          <li class="title">|Tracker</li>
+            <li class="divider"></li>
+          <li><a href="index.html">Fortnite</a></li>
+          <li class="divider"></li>
+          <li><a href="index.html">Rocket League</a></li>
+            <li class="divider"></li>
+            <li><a href="index.html">CoD MW</a></li>
+        </ul>-->
+      </li>
+        
+        <li data-magellan data-threshold="0">
+          <a href="#homeindex">MFULON</a><!--href can be erased to deactivate link-->
+        </li>
+  
+      <li>
+        <a>MUSIC</a><!--href can be erased to deactivate link-->
+       <!-- <ul class="submenu menu vertical" data-submenu>
+            <li class="title">|</li>
+            <li class="divider"></li>
+          <li>
+              <a href="index.html">My Playlist ONE</a>
+            </li>
+            <li class="divider"></li>
+          <li>
+              <a href="index.html">My Playlist Two</a>
+            </li>
+            <li class="divider"></li>
+          <li>
+              <a href="index.html">My Playlist Three</a>
+            </li>
+        </ul>-->
+      </li>
+        <li data-magellan data-threshold="0">
+          <a href="#merch">MERCH</a><!--href can be erased to deactivate link href="index.html"-->
+        </li>
+        <li data-magellan data-threshold="0">
+          <a href="#contact">CONTACT</a><!--href can be erased to deactivate link-->
+        </li>
+  
+      <li><a href="https://www.twitch.tv/mfulon" target="_blank" class="button lead wow pulse infinite">Live STREAM</a></li>
+  
     </ul>
+          </div>
+      </div>
+      
   </div>
-</div>
-<!-- /medium and larger nav bar -->
+  
+  <div class="title-bar hide-for-medium">
+    <div class="title-bar-left">
+      <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+      <span class="title-bar-title">Esports by MFULON</span>
+    </div>
+  </div>  
+ <!--END MENU-off canvas-->
 
-
+<!--OFF CANVAS-->
 	  
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
@@ -52,7 +148,10 @@
           <h1>MONARCH GAMERS</h1>
         </div>
       </div>
-      
+<!--END OFF CANVAS-->
+	  </div>
+	  </div>
+	</div>
       <!--FOOTER-->
     <footer class="footer">
     <div class="grid-container">
