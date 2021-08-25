@@ -243,7 +243,7 @@
                   <div class="responsive-embed">
   
   <!-- Add a placeholder for the Twitch embed -->
-                      <iframe width="auto" height="315"><div id="twitch-embed"></div></iframe>
+  <div id="twitch-embed"></div>
   <!-- Load the Twitch embed JavaScript file -->
   <script src="https://embed.twitch.tv/embed/v1.js"></script>
   <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
@@ -251,6 +251,7 @@
     new Twitch.Embed("twitch-embed", {
       channel: "mfulon",
       autoplay: true,
+      height: 315,    
       allowfullscreen: true,
       // Only needed if this page is going to be embedded on other websites
       parent: ["embed.example.com", "othersite.example.com"]
