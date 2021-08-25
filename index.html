@@ -240,7 +240,23 @@
           <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="">
             <div class="large-3 medium-3 small-6 cell">
               <div class="card" data-equalizer-watch>
-      <img src="https://mfulon.com/assets/img/mfulon_profile_pic/10.png" class="bleed wow fadeInUp">
+                  <div class="responsive-embed">
+  
+  <!-- Add a placeholder for the Twitch embed -->
+  <div id="twitch-embed"></div>
+  <!-- Load the Twitch embed JavaScript file -->
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+  <script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+      channel: "mfulon",
+      autoplay: true,
+      allowfullscreen: true,
+      // Only needed if this page is going to be embedded on other websites
+      parent: ["embed.example.com", "othersite.example.com"]
+    });
+  </script>
+</div>
         <div class="card-divider"></div>
       <div class="card-section">
           <h1 class="site__title" style="text-align:center;">MFULON</h1>
@@ -331,7 +347,7 @@
               </div>
             </div>
           </div> -->
-<div class="responsive-embed">
+<!--<div class="responsive-embed">
   
   <!- Add a placeholder for the Twitch embed ->
   <div id="twitch-embed"></div>
@@ -347,7 +363,7 @@
       parent: ["embed.example.com", "othersite.example.com"]
     });
   </script>
-</div>
+</div>-->
         </div>
 
       </div>    
